@@ -186,6 +186,7 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="KarateAdmin\adminpage.aspx" />
     <Content Include="KarateInstructor\instructorpage.aspx" />
     <Content Include="KarateMembers\memberpage.aspx" />
     <Content Include="Logon.aspx" />
@@ -244,6 +245,9 @@
     <Content Include="packages\bootstrap.5.2.3\content\Scripts\bootstrap.min.js" />
     <Content Include=".gitattributes" />
     <Content Include=".gitignore" />
+    <Content Include="KarateInstructor\Web.config" />
+    <Content Include="KarateMembers\Web.config" />
+    <Content Include="KarateAdmin\Web.config" />
     <None Include="packages\jQuery.3.4.1\Content\Scripts\jquery-3.4.1-vsdoc.js" />
     <Content Include="packages\jQuery.3.4.1\Content\Scripts\jquery-3.4.1.js" />
     <Content Include="packages\jQuery.3.4.1\Content\Scripts\jquery-3.4.1.min.js" />
@@ -603,6 +607,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Karate.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="KarateAdmin\adminpage.aspx.cs">
+      <DependentUpon>adminpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KarateAdmin\adminpage.aspx.designer.cs">
+      <DependentUpon>adminpage.aspx</DependentUpon>
     </Compile>
     <Compile Include="KarateInstructor\instructorpage.aspx.cs">
       <DependentUpon>instructorpage.aspx</DependentUpon>
