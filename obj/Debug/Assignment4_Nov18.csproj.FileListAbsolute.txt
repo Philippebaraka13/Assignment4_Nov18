@@ -60,3 +60,16 @@ C:\Users\kamok\source\repos\Assignment4_Nov18\obj\Debug\Assignment4_Nov18.csproj
 C:\Users\kamok\source\repos\Assignment4_Nov18\obj\Debug\Assignment4_Nov18.csproj.CopyComplete
 C:\Users\kamok\source\repos\Assignment4_Nov18\obj\Debug\Assignment4_Nov18.dll
 C:\Users\kamok\source\repos\Assignment4_Nov18\obj\Debug\Assignment4_Nov18.pdb
+C:\Users\kamok\Source\Repos\Assignment4_Nov18_Logon\bin\Assignment4_Nov18.dll.config
+C:\Users\kamok\Source\Repos\Assignment4_Nov18_Logon\bin\Assignment4_Nov18.dll
+C:\Users\kamok\Source\Repos\Assignment4_Nov18_Logon\bin\Assignment4_Nov18.pdb
+C:\Users\kamok\Source\Repos\Assignment4_Nov18_Logon\bin\System.Web.Optimization.xml
+C:\Users\kamok\Source\Repos\Assignment4_Nov18_Logon\bin\Newtonsoft.Json.xml
+C:\Users\kamok\Source\Repos\Assignment4_Nov18_Logon\bin\Antlr3.Runtime.pdb
+C:\Users\kamok\Source\Repos\Assignment4_Nov18_Logon\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\kamok\Source\Repos\Assignment4_Nov18_Logon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\kamok\Source\Repos\Assignment4_Nov18_Logon\obj\Debug\Assignment4_Nov18.csproj.AssemblyReference.cache
+C:\Users\kamok\Source\Repos\Assignment4_Nov18_Logon\obj\Debug\Assignment4_Nov18.csproj.CoreCompileInputs.cache
+C:\Users\kamok\Source\Repos\Assignment4_Nov18_Logon\obj\Debug\Assignment4_Nov18.csproj.CopyComplete
+C:\Users\kamok\Source\Repos\Assignment4_Nov18_Logon\obj\Debug\Assignment4_Nov18.dll
+C:\Users\kamok\Source\Repos\Assignment4_Nov18_Logon\obj\Debug\Assignment4_Nov18.pdb
