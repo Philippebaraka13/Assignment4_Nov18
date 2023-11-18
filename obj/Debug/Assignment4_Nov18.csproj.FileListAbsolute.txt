@@ -50,17 +50,6 @@ C:\Users\kamok\source\repos\Assignment4_Nov18\bin\roslyn\vbc.exe.config
 C:\Users\kamok\source\repos\Assignment4_Nov18\bin\roslyn\vbc.rsp
 C:\Users\kamok\source\repos\Assignment4_Nov18\bin\roslyn\VBCSCompiler.exe
 C:\Users\kamok\source\repos\Assignment4_Nov18\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\kamok\source\repos\Assignment4_Nov18\bin\Antlr3.Runtime.dll
-C:\Users\kamok\source\repos\Assignment4_Nov18\bin\AspNet.ScriptManager.jQuery.dll
-C:\Users\kamok\source\repos\Assignment4_Nov18\bin\Microsoft.AspNet.FriendlyUrls.dll
-C:\Users\kamok\source\repos\Assignment4_Nov18\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
-C:\Users\kamok\source\repos\Assignment4_Nov18\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\kamok\source\repos\Assignment4_Nov18\bin\Microsoft.ScriptManager.MSAjax.dll
-C:\Users\kamok\source\repos\Assignment4_Nov18\bin\Microsoft.ScriptManager.WebForms.dll
-C:\Users\kamok\source\repos\Assignment4_Nov18\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\kamok\source\repos\Assignment4_Nov18\bin\Newtonsoft.Json.dll
-C:\Users\kamok\source\repos\Assignment4_Nov18\bin\System.Web.Optimization.dll
-C:\Users\kamok\source\repos\Assignment4_Nov18\bin\WebGrease.dll
 C:\Users\kamok\source\repos\Assignment4_Nov18\bin\System.Web.Optimization.xml
 C:\Users\kamok\source\repos\Assignment4_Nov18\bin\Newtonsoft.Json.xml
 C:\Users\kamok\source\repos\Assignment4_Nov18\bin\Antlr3.Runtime.pdb
