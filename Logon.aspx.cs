@@ -12,7 +12,7 @@ namespace Assignment4_Nov18
     public partial class Logon : System.Web.UI.Page
     {
         KarateDataContext dbcon;
-        string conn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\kamok\\Source\\Repos\\Assignment4_Nov18_Logon\\App_Data\\KarateSchool.mdf;Integrated Security=True;Connect Timeout=30";
+        string conn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Chris\\source\\repos\\ChristopherTupper\\KarateSchool\\KarateSchool.mdf;Integrated Security=True;Connect Timeout=30";
         protected void Page_Load(object sender, EventArgs e)
         {
             dbcon = new KarateDataContext(conn);
@@ -30,7 +30,7 @@ namespace Assignment4_Nov18
 
 
             // Search for the current User, validate UserName and Password
-           NetUser myUser = (from x in dbcon.NetUsers
+            NetUser myUser = (from x in dbcon.NetUsers
                                     where x.UserName == HttpContext.Current.Session["nUserName"].ToString()
                                     && x.UserPassword == HttpContext.Current.Session["uPass"].ToString()
                                     select x).First();
