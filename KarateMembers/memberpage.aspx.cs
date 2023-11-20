@@ -25,7 +25,6 @@ namespace Assignment4_Nov18.KarateMembers
 
                 if (!IsPostBack)
                 {
-                    Section section = (from x in dbcon.Sections select x).First();
                     Member user = (from x in dbcon.Members where x.Member_UserID == myUserID select x).First(); 
 
                     var myOtherResult = (from x in dbcon.Sections join s in dbcon.Instructors on x.Instructor_ID equals s.InstructorID where x.Member_ID == user.Member_UserID select new { x.SectionName, s.InstructorFirstName, s.InstructorLastName, x.SectionFee });
