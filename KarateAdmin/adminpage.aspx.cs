@@ -169,11 +169,13 @@ namespace Assignment4_Nov18.KarateAdmin
             {
                 SqlConnection con = new SqlConnection(conn);
 
-                string query = "insert into Section (Member_ID, SectionName, SectionStartDate, InstructorID, SectionFee) values ('" + TextBox10.Text + "', '" + TextBox11.Text + "', '" + TextBox12.Text + "', '" + TextBox13.Text + "', '" + TextBox14.Text + "')";
+                string query = "insert into Section (Member_ID, SectionName, SectionStartDate, Instructor_ID, SectionFee) values ('" + TextBox10.Text + "', '" + TextBox11.Text + "', '" + TextBox12.Text + "', '" + TextBox13.Text + "', '" + TextBox14.Text + "')";
+                SqlCommand cmd = new SqlCommand(query, con);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                adapter.Fill(ds);
             }
             catch { }
-            if (!IsPostBack)
-            {
                 var myOtherResult = (from x in dbcon.Members select new { x.MemberFirstName, x.MemberLastName, x.MemberPhoneNumber, x.MemberDateJoined });
 
                 GridView1.DataSource = myOtherResult;
@@ -182,7 +184,6 @@ namespace Assignment4_Nov18.KarateAdmin
                 var myResult = (from x in dbcon.Instructors select new { x.InstructorFirstName, x.InstructorLastName });
                 GridView2.DataSource = myResult;
                 GridView2.DataBind();
-            }
         }
     }
 }
