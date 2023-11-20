@@ -18,10 +18,10 @@ namespace Assignment4_Nov18.KarateAdmin
         protected void Page_Load(object sender, EventArgs e)
         {
             dbcon = new KarateDataContext(conn);
-            string myUser = User.Identity.Name;
-            //string myUser = "user1";
+           // string myUser = User.Identity.Name;
+            string myUser = "admin";
 
-            int myUserID = (from x in dbcon.NetUsers where x.UserName == HttpContext.Current.Session["nUserName"].ToString() select x.UserID).First();
+            int myUserID = (from x in dbcon.NetUsers where x.UserName == myUser select x.UserID).First();
             //int myMemberID = myUser.UserID;
 
 

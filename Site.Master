@@ -47,26 +47,16 @@
         </button>
         <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
             <ul class="navbar-nav flex-grow-1">
-                <li class="nav-item"><a class="nav-link" runat="server" href="~/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" runat="server" href="~/">Home</a><li class="nav-item">&nbsp; </li>
                 
-                <!-- LoginView to show/hide navigation based on roles -->
-                <asp:LoginView runat="server" ID="LoginViewForNav">
-                    <RoleGroups>
-                        <asp:RoleGroup Roles="Member">
-                            <ContentTemplate>
-                                <li class="nav-item"><a class="nav-link" runat="server" href="~/KarateMembers/memberpage.aspx">Members</a></li>
-                            </ContentTemplate>
-                        </asp:RoleGroup>
-                        <asp:RoleGroup Roles="Instructor">
-                            <ContentTemplate>
-                                <li class="nav-item"><a class="nav-link" runat="server" href="~/KarateInstructor/instructorpage.aspx">Instructors</a></li>
-                            </ContentTemplate>
-                        </asp:RoleGroup>
-                    </RoleGroups>
-                    <AnonymousTemplate>
-                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Logon.aspx">Login</a></li>
-                    </AnonymousTemplate>
-                </asp:LoginView>
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/KarateMembers/memberpage.aspx">Members</asp:HyperLink>
+&nbsp;
+
+                <li class="nav-item">
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/KarateInstructor/instructorpage.aspx">Instructors</asp:HyperLink>
+                <li class="nav-item">
+                <li class="nav-item">
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/KarateAdmin/adminpage.aspx">Administrators</asp:HyperLink>
 
             </ul>
         </div>
