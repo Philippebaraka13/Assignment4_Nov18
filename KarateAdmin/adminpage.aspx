@@ -1,5 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="adminpage.aspx.cs" Inherits="Assignment4_Nov18.KarateAdmin.adminpage" %>
+
+    
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <link rel="stylesheet" href="~/KarateAdmin/StyleSheet1.css" type="text/css" />
         <p>
         <br />
         Hi,
@@ -35,19 +39,19 @@
     </p>
         <p>
             <asp:Button ID="deleteInstructor" runat="server" OnClick="deleteInstructor_Click" Text="Delete" />
-&nbsp;Instructor: ID
+            &nbsp;Instructor: UserName
             <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
     </p>
         <p>
             <asp:Button ID="deleteMember" runat="server" OnClick="deleteMember_Click" Text="Delete" />
-&nbsp;Member: ID
+            &nbsp;Member: UserName
             <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
     </p>
         <p>
     </p>
         <p>
             <asp:Button ID="addToSection" runat="server" OnClick="addToSection_Click" Text="Add" />
-&nbsp;Member: ID<asp:TextBox ID="TextBox10" runat="server"></asp:TextBox>
+            &nbsp;Member: UserName<asp:TextBox ID="TextBox10" runat="server"></asp:TextBox>
 &nbsp;to Section: Name<asp:TextBox ID="TextBox11" runat="server"></asp:TextBox>
 &nbsp;SectionStartDate<asp:TextBox ID="TextBox12" runat="server"></asp:TextBox>
 &nbsp;InstructorID<asp:TextBox ID="TextBox13" runat="server"></asp:TextBox>

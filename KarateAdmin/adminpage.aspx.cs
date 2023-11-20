@@ -109,21 +109,23 @@ namespace Assignment4_Nov18.KarateAdmin
             // This is an unsafe function. Selecting a Member_UserID will make it delete the Member from NetUsers, but not from Members.
             try
             {
+                NetUser user = (from x in dbcon.NetUsers where x.UserName == TextBox8.Text select x).First();
+                string myID = user.UserID.ToString();
                 SqlConnection con = new SqlConnection(conn);
 
-                string query = "delete from Instructor where InstructorID = '" + TextBox8.Text + "'";
+                string query = "delete from Instructor where InstructorID = '" + myID + "'";
                 SqlCommand cmd = new SqlCommand(query, con);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 adapter.Fill(ds);
 
-                query = "delete from Section where Instructor_ID = '" + TextBox8.Text + "'";
+                query = "delete from Section where Instructor_ID = '" + myID + "'";
                 cmd = new SqlCommand(query, con);
                 adapter = new SqlDataAdapter(cmd);
                 ds = new DataSet();
                 adapter.Fill(ds);
 
-                query = "delete from NetUser where UserID = '" + TextBox8.Text + "'";
+                query = "delete from NetUser where UserID = '" + myID + "'";
                 cmd = new SqlCommand(query, con);
                 adapter = new SqlDataAdapter(cmd);
                 ds = new DataSet();
@@ -144,9 +146,13 @@ namespace Assignment4_Nov18.KarateAdmin
         {
             try
             {
+                NetUser user = (from x in dbcon.NetUsers where x.UserName == TextBox9.Text select x).First();
+                string myID = user.UserID.ToString();
+                
+                // from textbox10 get UN, find UID
                 SqlConnection con = new SqlConnection(conn);
 
-                string query = "delete from Member where Member_UserID = '" + TextBox9.Text + "'";
+                string query = "delete from Member where Member_UserID = '" + myID + "'";
                 SqlCommand cmd = new SqlCommand(query, con);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
@@ -167,9 +173,15 @@ namespace Assignment4_Nov18.KarateAdmin
         {
             try
             {
+                NetUser user = (from x in dbcon.NetUsers where x.UserName == TextBox10.Text select x).First();
+                string myID = user.UserID.ToString();
+
+                NetUser user2 = (from x in dbcon.NetUsers where x.UserName == TextBox13.Text select x).First();
+                string myID2 = user2.UserID.ToString();
+
                 SqlConnection con = new SqlConnection(conn);
 
-                string query = "insert into Section (Member_ID, SectionName, SectionStartDate, Instructor_ID, SectionFee) values ('" + TextBox10.Text + "', '" + TextBox11.Text + "', '" + TextBox12.Text + "', '" + TextBox13.Text + "', '" + TextBox14.Text + "')";
+                string query = "insert into Section (Member_ID, SectionName, SectionStartDate, Instructor_ID, SectionFee) values ('" + myID + "', '" + TextBox11.Text + "', '" + TextBox12.Text + "', '" + myID2 + "', '" + TextBox14.Text + "')";
                 SqlCommand cmd = new SqlCommand(query, con);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
