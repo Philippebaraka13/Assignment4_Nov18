@@ -10,7 +10,7 @@ namespace Assignment4_Nov18.KarateMembers
     public partial class memberpage : System.Web.UI.Page
     {
         KarateDataContext dbcon;
-        string conn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Chris\\source\\repos\\ChristopherTupper\\KarateSchool\\KarateSchool.mdf;Integrated Security=True;Connect Timeout=30";
+        string conn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\kamok\\Source\\Repos\\Assignment4_Nov18_Instrutor\\App_Data\\KarateSchool.mdf;Integrated Security=True;Connect Timeout=30";
            
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -20,8 +20,6 @@ namespace Assignment4_Nov18.KarateMembers
 
                 int myUserID = (from x in dbcon.NetUsers where x.UserName == HttpContext.Current.Session["nUserName"].ToString() select x.UserID).First();
                 //int myMemberID = myUser.UserID;
-
-                
 
                 if (!IsPostBack)
                 {
@@ -36,6 +34,11 @@ namespace Assignment4_Nov18.KarateMembers
                     GridView1.DataSource = myOtherResult;
                     GridView1.DataBind();
                 }
-            }
         }
+
+        protected void LoginStatus1_LoggingOut(object sender, LoginCancelEventArgs e)
+        {
+
+        }
+    }
 }

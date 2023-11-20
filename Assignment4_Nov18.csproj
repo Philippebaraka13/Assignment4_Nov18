@@ -187,6 +187,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="KarateAdmin\adminpage.aspx" />
+    <Content Include="KarateAdmin\adminpage.css" />
     <Content Include="KarateInstructor\instructorpage.aspx" />
     <Content Include="KarateMembers\memberpage.aspx" />
     <Content Include="Logon.aspx" />

@@ -1,4 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="adminpage.aspx.cs" Inherits="Assignment4_Nov18.KarateAdmin.adminpage" %>
+
+<asp:Content ID="HeadContent" ContentPlaceHolderID="HeadContent" runat="server">
+   
+    <link href="~/KarateAdmin/adminpage.css" rel="stylesheet" type="text/css" />
+</asp:Content>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
         <p>
         <br />
@@ -8,6 +14,7 @@
         <asp:LoginStatus ID="LoginStatus1" runat="server" />
     </p>
     <p>
+
 &nbsp;
         <asp:GridView ID="GridView1" runat="server">
         </asp:GridView>
@@ -17,6 +24,7 @@
     <p>
         &nbsp;</p>
     <p>
+
         <asp:Button ID="addUser" runat="server" OnClick="addUser_Click" Text="Add" />
 &nbsp;: UserName<asp:TextBox ID="TextBox15" runat="server"></asp:TextBox>
 &nbsp;UserPassword<asp:TextBox ID="TextBox16" runat="server"></asp:TextBox>
